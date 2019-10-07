@@ -1,0 +1,77 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+
+
+<div class="panel panel-info">
+<div class="panel-heading">
+    <h3 class="panel-title"><i class="fluigicon fluigicon-user icon-lg">Cliente</i></h3>
+</div>
+<div class="panel-body">
+<div class="row">
+
+	<div class="form-group col-md-3">
+	 	<label for="nombre">Nombre</label>
+	 	<input placeholder="" type="text" name="nombre" id="nombre" class="form-control" >
+	</div>
+	<div class="form-group col-md-3">
+	 	<label for="rfc">RFC</label>
+	 	<input type="text" name="rfc" id="rfc" class="form-control" mask="0000000000000">
+	</div>
+	<div class="form-group col-md-3">
+	 	<label for="nomEmpresa">Nombre de la Empresa</label>
+	 	<input type="text" name="nomEmpresa" id="nomEmpresa" class="form-control">
+	 </div>
+	 <div class="form-group col-md-3">
+	 	<label for="tipoCliente">Tipo de Cliente</label>
+	 	<select type="text" name="tipoCliente" id="tipoCliente" class="form-control">
+	 	 <option value="fisica">Fisica</option>
+	 	  <option value="moral">Moral</option>
+	 	</select>
+	 </div>
+	 	
+		<div class="panel-heading">
+  		  <h3 class="panel-title"><i class="fluigicon fluigicon-company icon-lg">  Domicilio</i></h3>
+		</div>
+		<div class="panel-body">
+	 
+	 			
+			<div class="form-group col-md-3">
+			 	<label for="estado">Estado</label>
+			 	<select name="estado" id="estado" class="form-control" dataset="dsCodigoPostal" datasetkey="Estado" datasetvalue="Estado"></select>
+			</div>
+			<div class="form-group col-md-3">
+			 	<label for="municipio">Municipo</label>
+			 	<select name="municipio" id="municipio" class="form-control" dataset="dsCodigoPostal" datasetkey="Estado" datasetvalue="Municipio"></select>
+			</div>
+			<div class="form-group col-md-3">
+			 	<label for="colonia">Localidad</label>
+			 	<select type="text" name="colonia" id="colonia" class="form-control" dataset="dsCodigoPostal" datasetkey="Estado" datasetvalue="Localidad"></select>
+			</div>
+			<div class="form-group col-md-2">
+			 	<label for="cPostal">Código Postal</label>
+			 	<select type="number" name="cPostal" id="cPostal" class="form-control" dataset="dsCodigoPostal" datasetkey="Estado" datasetvalue="cp"></select>
+			</div>
+			
+			 	</div>
+			 </div>
+			
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+</form>
+</div>
+</body>
+<script type="text/javascript" src="cPostales.js"></script>
+</html>
