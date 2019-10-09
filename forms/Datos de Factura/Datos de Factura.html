@@ -12,35 +12,61 @@
 
 <div class="panel panel-primary">
 <div class="panel-heading">
-    <h3 class="panel-title"><span class="fluigicon fluigicon-file icon-xl"></span>Datos de factura</h3>
-</div>
-<div class="panel-body">
-<div class="row">
-<div class="form-group col-md-2">
-   <label for="fecha"><span  class="fluigicon fluigicon-calendar icon-xl"></span>Fecha de movimiento</label>
-   <input type="date" name="fecha" id="fecha" class="form-control">
- </div>
- <div class="form-group col-md-3">
- <label for="descripcion"><span class="fluigicon fluigicon-comment icon-xl"></span>Folio</label>
- <input type="text" name="descripcion" id="descripcion" class="form-control">
-</div>
-<div class="form-group col-md-3">
- <div class="form-group col-md-2">
-<label for="deposito"><span class="fluigicon fluigicon-arrow-down icon-xl"></span>Deposito</label>
-<input type="text" name="deposito" id="deposito" class="form-control" mask="0000000000">
-</div>
-<div class="form-group col-md-2">
-<label for="retiro"><span class="fluigicon fluigicon-arrow-up icon-xl"></span>Retiro</label>
-<input type="text" name="retiro" id="retiro" class="form-control" mask="0000000000">  
-</div>
-<div class="form-group col-md-2">
-<label for="saldo"><span class="fluigicon fluigicon-money-circle icon-xl"></span>Saldo fiscal</label>
-<input type="text" name="saldo" id="saldo" class="form-control">
-</div>
-
-
-</div>
-</div>
+   <h3 class="panel-title"><span class="fluigicon fluigicon-file icon-xl"></span>Factura</h3>
+	</div>
+	<div class="panel-body">
+	<div class="row">
+		<div class="form-group col-md-3">
+		   <label for="operador"><span  class="fluigicon fluigicon-calendar icon-xl"></span>Razon Social</label>
+		   <select type="text" name="operador" id="operador" class="form-control" dataSet="dsFormPermisionario" datasetkey="nombre" datasetvalue="nombre"></select>
+		 </div>
+		 <div class="form-group col-md-3">
+			 <label for="rfcper"><span class="fluigicon fluigicon-comment icon-xl"></span>RFC</label>
+			 <input type="text" name="rfcper" id="rfcper" class="form-control">
+		</div>
+		<div class="form-group col-md-3">
+			 <label for="domicilio"><span class="fluigicon fluigicon-comment icon-xl"></span>Domicilio y Expedido en:</label>
+			 <label type="text" name="domicilio" id="domicilio" class="form-control">Coatzacoalcos Ver.</label>
+		</div>
+		<div class="form-group col-md-3">
+			 <label for="cp"><span class="fluigicon fluigicon-comment icon-xl"></span>Lugar de Expedicion</label>
+			 <input type="text" name="cp" id="cp" class="form-control" mask="00000">
+		</div>
+			<div class="form-group col-md-12">
+ 				<label for="cp"><span class="fluigicon fluigicon-comment icon-xl"></span>Datos de receptor</label>
+ 			</div>
+			<div class="form-group col-md-3">
+				 <label for="cliente"><span class="fluigicon fluigicon-comment icon-xl"></span>Cliente</label>
+				 <select type="text" name="cliente" id="cliente" class="form-control" dataset="dsFormClient" datasetkey="nombre" datasetvalue="nombre" >
+			</div>
+	
+			<div class="form-group col-md-3">
+				 <label for="noComprobante"><span class="fluigicon fluigicon-comment icon-xl"></span>Numero de Comprobante</label>
+				 <input type="number" name="rnoComprobantefc" id="noComprobante" class="form-control">
+			</div>
+	
+			<div class="form-group col-md-3">
+				 <label for="rfc"><span class="fluigicon fluigicon-comment icon-xl"></span>RFC</label>
+				 <input type="text" name="rfc" id="rfc" class="form-control">
+			</div>
+	
+			<div class="form-group col-md-3">
+				 <label for="folioFiscal"><span class="fluigicon fluigicon-comment icon-xl"></span>Folio Fiscal</label>
+				 <input type="number" name="folioFiscal" id="folioFiscal" class="form-control">
+			</div>
+	
+			<div class="form-group col-md-3">
+				 <label for="domc"><span class="fluigicon fluigicon-comment icon-xl"></span>Domicilio</label>
+				 <input type="text" name="domc" id="domc" class="form-control">
+			</div>	
+	
+			<div class="form-group col-md-3">
+				 <label for="fechaHora"><span class="fluigicon fluigicon-comment icon-xl"></span>Fecha y Hora</label>
+				 <input type="date" name="fechaHo" id="fecha" class="form-control">
+				 <input type="time" name="fechaHora" id="hora" class="form-control">
+			</div>	
+		</div>
+	</div>
 </div>
 
 </form>
