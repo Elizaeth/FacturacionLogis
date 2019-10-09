@@ -16,55 +16,104 @@
 	</div>
 	<div class="panel-body">
 	<div class="row">
-		<div class="form-group col-md-3">
-		   <label for="operador"><span  class="fluigicon fluigicon-calendar icon-xl"></span>Razon Social</label>
-		   <select type="text" name="operador" id="operador" class="form-control" dataSet="dsFormPermisionario" datasetkey="nombre" datasetvalue="nombre"></select>
-		 </div>
-		 <div class="form-group col-md-3">
-			 <label for="rfcper"><span class="fluigicon fluigicon-comment icon-xl"></span>RFC</label>
-			 <input type="text" name="rfcper" id="rfcper" class="form-control">
-		</div>
-		<div class="form-group col-md-3">
-			 <label for="domicilio"><span class="fluigicon fluigicon-comment icon-xl"></span>Domicilio y Expedido en:</label>
-			 <label type="text" name="domicilio" id="domicilio" class="form-control">Coatzacoalcos Ver.</label>
-		</div>
-		<div class="form-group col-md-3">
-			 <label for="cp"><span class="fluigicon fluigicon-comment icon-xl"></span>Lugar de Expedicion</label>
-			 <input type="text" name="cp" id="cp" class="form-control" mask="00000">
-		</div>
-			<div class="form-group col-md-12">
- 				<label for="cp"><span class="fluigicon fluigicon-comment icon-xl"></span>Datos de receptor</label>
- 			</div>
-			<div class="form-group col-md-3">
-				 <label for="cliente"><span class="fluigicon fluigicon-comment icon-xl"></span>Cliente</label>
-				 <select type="text" name="cliente" id="cliente" class="form-control" dataset="dsFormClient" datasetkey="nombre" datasetvalue="nombre" >
-			</div>
-	
-			<div class="form-group col-md-3">
-				 <label for="noComprobante"><span class="fluigicon fluigicon-comment icon-xl"></span>Numero de Comprobante</label>
-				 <input type="number" name="rnoComprobantefc" id="noComprobante" class="form-control">
-			</div>
-	
-			<div class="form-group col-md-3">
-				 <label for="rfc"><span class="fluigicon fluigicon-comment icon-xl"></span>RFC</label>
-				 <input type="text" name="rfc" id="rfc" class="form-control">
-			</div>
-	
-			<div class="form-group col-md-3">
-				 <label for="folioFiscal"><span class="fluigicon fluigicon-comment icon-xl"></span>Folio Fiscal</label>
-				 <input type="number" name="folioFiscal" id="folioFiscal" class="form-control">
-			</div>
-	
-			<div class="form-group col-md-3">
-				 <label for="domc"><span class="fluigicon fluigicon-comment icon-xl"></span>Domicilio</label>
-				 <input type="text" name="domc" id="domc" class="form-control">
-			</div>	
-	
-			<div class="form-group col-md-3">
-				 <label for="fechaHora"><span class="fluigicon fluigicon-comment icon-xl"></span>Fecha y Hora</label>
-				 <input type="date" name="fechaHo" id="fecha" class="form-control">
-				 <input type="time" name="fechaHora" id="hora" class="form-control">
-			</div>	
+				<div class="form-group col-md-3">
+				   <label for="operador"><span  class="fluigicon fluigicon-calendar icon-xl"></span>Razon Social</label>
+				   <select type="text" name="operador" id="operador" class="form-control" dataSet="dsFormPermisionario" datasetkey="nombre" datasetvalue="nombre"></select>
+				 </div>
+				 <div class="form-group col-md-3">
+					 <label for="rfcper"><span class="fluigicon fluigicon-comment icon-xl"></span>RFC</label>
+					 <input type="text" name="rfcper" id="rfcper" class="form-control">
+				</div>
+				<div class="form-group col-md-6">
+					 <label for="domicilio"><span class="fluigicon fluigicon-comment icon-xl"></span>Domicilio y Expedido en:</label>
+					 <label type="text" name="domicilio" id="domicilio" class="form-control">Calle Abel R Perez. 25, 7 de Mayo, Cosoleacaque, Veracruz, CP 96344</label>
+				</div>
+			
+				<div class="form-group col-md-12">
+	 				<label for="cp"><i class="fluigicon fluigicon-form icon-md">Datos de Receptor</i></label>
+	 			</div>
+				<div class="form-group col-md-3">
+					 <label for="cliente">Cliente</label>
+					 <select type="text" name="cliente" id="cliente" class="form-control" dataset="dsFormClient" datasetkey="nombre" datasetvalue="nombre" ></select>
+				</div>
+				<div class="form-group col-md-3">
+					 <label for="noComprobante">Numero de Comprobante</label>
+					 <input type="number" name="rnoComprobantefc" id="noComprobante" class="form-control">
+				</div>
+				<div class="form-group col-md-3">
+					 <label for="rfc">RFC</label>
+					 <input type="text" name="rfc" id="rfc" class="form-control">
+				</div>
+		
+				<div class="form-group col-md-3">
+					 <label for="folioFiscal">Folio Fiscal</label>
+					 <input type="number" name="folioFiscal" id="folioFiscal" class="form-control">
+				</div>
+		
+				<div class="form-group col-md-3">
+					 <label for="domc">Domicilio</label>
+					 <input type="text" name="domc" id="domc" class="form-control">
+				</div>	
+		
+				<div class="form-group col-md-3">
+					 <label for="fechaHora">Fecha y Hora</label>
+					 <input type="date" name="fechaHo" id="fecha" class="form-control">
+					 <input type="time" name="fechaHora" id="hora" class="form-control">
+				</div>	
+				
+				<div class="form-group col-md-3">
+					 <label for="regFiscal">Regimen Fiscal</label>
+					 <select type="text" name="regFiscal" id="regFiscal" class="form-control">
+						 <option value="fisica">Fisica</option>
+						 <option value="moral">Moral</option>
+	 				</select>
+				</div>	
+				
+			
+				
+				<div class="form-group col-md-2">
+					 <label for="cantidad">Cantidad</label>
+					 <input type="text" name="cantidad" id="cantidad" class="form-control">
+				</div>	
+				<div class="form-group col-md-12">
+				</div>
+				
+				<div class="form-group col-md-3">
+					 <label for="operadorFac">Operador</label>
+					 <select type="text" name="operadorFac" id="operadorFac" class="form-control" dataset="dsFormOperador" datasetkey="nombre" datasetvalue="nombre"></select>
+				</div>	
+				<div class="form-group col-md-4">
+					 <label for="descripcion">Descripción</label>
+					 <input type="text" name="descripcion" id="descripcion" class="form-control">
+				</div>	
+				<div class="form-group col-md-2">
+					 <label for="precio">Precio</label>
+					 <input type="text" name="precio" id="precio" class="form-control">
+				</div>	
+				<div class="form-group col-md-2">
+					 <label for="importe">Importe</label>
+					 <input type="text" name="importe" id="importe" class="form-control">
+				</div>	
+				
+				
+				<div class="form-group col-md-2">
+					 <label for="subtotal">Subtotal</label>
+					 <input type="text" name="subtotal" id="subtotal" class="form-control">
+				</div>
+				<div class="form-group col-md-2">
+					 <label for="ivaporcentaje">Iva 16%</label>
+					 <input type="text" name="ivaporcentaje" id="ivaporcentaje" class="form-control">
+				</div>
+				<div class="form-group col-md-2">
+					 <label for="ivaRetenido">Iva Retenido</label>
+					 <input type="text" name="ivaRetenido" id="ivaRetenido" class="form-control">
+				</div>
+				
+				
+		
+		
+		
+		
 		</div>
 	</div>
 </div>
