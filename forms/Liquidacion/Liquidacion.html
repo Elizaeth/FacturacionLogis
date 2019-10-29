@@ -14,96 +14,98 @@
 <div class="panel panel-info">
 <div class="panel-heading">
     <h3 class="panel-title"><i class="fluigicon fluigicon-money icon-md">Liquidacion</i></h3>
-</div>
-<div class="panel-body">
-<div class="row">
+	</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="form-group col-md-4">
+				 	<label for="fecha">Fechas de Viaje</label>
+				 	<input placeholder="dd/mm/aaaa" type="text" name="fecha" id="fecha" class="form-control">
+				</div>
+				
+				<div class="form-group col-md-4">
+				 	<label for="permisionario">Razon Social</label>
+				 	<input type="text" name="permisionario" id="permisionario" class="form-control">
+				</div>
+				<div class="form-group col-md-4">
+				 	<label for="rfc">RFC</label>
+				 	<input type="text" name="rfc" id="rfc" class="form-control">
+				</div>
+				<div class="form-group col-md-4">
+				 	<label for="rfc">Domicilio y Expedido en:</label>
+				 	<label type="text" name="rfc" id="rfc" class="form-control">Calle Abel R Perez 25, 7 de Mayo, Cosoleacaque, Veracruz, CP 96344</label>
+				</div>
+				<div class="form-group col-md-4">
+				 	<label for="cliente">Cliente</label>
+				 	<input type="text" name="cliente" id="cliente" class="form-control">
+				</div>
 
-	<div class="form-group col-md-3">
-	 	<label for="facturaTTCYD">Factura TTCYD</label>
-	 	<input placeholder="" type="text" name="facturaTTCYD" id="facturaTTCYD" class="form-control">
-	</div>
-	<div class="form-group col-md-3">
-	 	<label for="fechaIngresoCobroCYD">Fecha Ingreso Cobro CYD</label>
-	 	<input type="text" name="fechaIngresoCobroCYD" id="fechaIngresoCobroCYD" class="form-control" mask="0000000000000">
-	</div>
-	<div class="form-group col-md-3">
-	 	<label for="fechaDocumentosOpe">Fecha de Entrega de Documentos Operador</label>
-	 	<input type="text" name="fechaDocumentosOpe" id="fechaDocumentosOpe" class="form-control">
-	 </div>
-	 <div class="form-group col-md-3">
-	 	<label for="fechaPagoLiquidacion">Fecha de Pago Liquidacion</label>
-	 	<input type="text" name="fechaPagoLiquidacion" id="fechaPagoLiquidacion" class="form-control">
-	 </div>
-			<div class="form-group col-md-3">
-			 	<label for="fechaDepositoAnticipo">Fecha Deposito 1er Anticipo</label>
-			 	<input type="number" name="fechaDepositoAnticipo" id="fechaDepositoAnticipo" class="form-control" mask="00000">
+				<div class="form-group col-md-12">
+	
+					<div class="form-group col-md-2">
+					 	<label for="pistas">Pistas</label>
+					 	<input type="number" name="pistas" id="pistas" class="form-control">
+					</div>
+					<div class="form-group col-md-2">
+					 	<label for="desvios">Desvios</label>
+					 	<input type="number" name="desvios" id="desvios" class="form-control" >
+					</div>
+					<div class="form-group col-md-2">
+					 	<label for="permisos">Permisos</label>
+					 	<input type="number" name="permisos" id="permisos" class="form-control">
+					</div>
+					<div class="form-group col-md-2">
+					 	<label for="maniobra">Maniobra</label>
+					 	<input type="number" name="maniobra" id="maniobra" class="form-control">
+					</div>
+					<div class="form-group col-md-2">
+					 	<label for="pension">Pension</label>
+					 	<input type="number" name="pension" id="pension" class="form-control" >
+					</div>
+					<div class="form-group col-md-2">
+					 	<label for="estadias">Estadias</label>
+					 	<input type="number" name="estadias" id="estadias" class="form-control">
+					</div>
+				</div>
+				<div class="form-group col-md-3">
+				 	<label for="fechaDocumentosOpe">Fecha de Entrega de Documentos Operador</label>
+				 	<input type="text" name="fechaDocumentosOpe" id="fechaDocumentosOpe" class="form-control">
+				 </div>
+				<div class="form-group col-md-3">
+				 	<label for="facturaTTCYD">Factura TTCYD</label>
+				 	<input placeholder="" type="text" name="facturaTTCYD" id="facturaTTCYD" class="form-control">
+				</div>
+				<div class="form-group col-md-3">
+				 	<label for="remision">Remision</label>
+				 	<input placeholder="" type="text" name="remision" id="remision" class="form-control">
+				</div>
+				<div class="form-group col-md-3">
+				 	<label for="remision">Peso</label>
+				 	<input placeholder="" type="text" name="remision" id="remision" class="form-control">
+				</div>
+				<div class="form-group col-md-3">
+				 	<label for="remision">Cuota</label>
+				 	<input placeholder="" type="text" name="remision" id="remision" class="form-control">
+				</div>	
+				<div class="form-group col-md-3">
+				 	<label for="fechaIngresoCobroCYD">Fecha Ingreso Cobro CYD</label>
+				 	<input type="text" name="fechaIngresoCobroCYD" id="fechaIngresoCobroCYD" class="form-control" mask="0000000000000">
+				</div>
+				
+				 <div class="form-group col-md-3">
+				 	<label for="fechaPagoLiquidacion">Fecha de Pago Liquidacion</label>
+				 	<input type="text" name="fechaPagoLiquidacion" id="fechaPagoLiquidacion" class="form-control">
+				 </div>
+								
+				<div class="form-group col-md-3">
+				 	<label for="liquidacionPagado">Liquidacion Pagado</label>
+				 	<input type="checkbox" name="liquidacionPagado" id="liquidacionPagado" class="form-control">
+				</div>
+				<div class="form-group col-md-3">
+				 	<label for="facturaLiquidacion">Factura Liquidacion</label>
+				 	<input type="number" name="facturaLiquidacion" id="facturaLiquidacion" class="form-control" >
+				</div>
 			</div>
-			<div class="form-group col-md-3">
-			 	<label for="pistas">Pistas</label>
-			 	<input type="number" name="pistas" id="pistas" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="desvios">Desvios</label>
-			 	<input type="number" name="desvios" id="desvios" class="form-control" >
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="permisos">Permisos</label>
-			 	<input type="number" name="permisos" id="permisos" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="maniobra">Maniobra</label>
-			 	<input type="number" name="maniobra" id="maniobra" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="pension">Pension</label>
-			 	<input type="number" name="pension" id="pension" class="form-control" >
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="estadias">Estadias</label>
-			 	<input type="number" name="estadias" id="estadias" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="liquidacionPagado">Liquidacion Pagado</label>
-			 	<input type="number" name="liquidacionPagado" id="liquidacionPagado" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="facturaLiquidacion">Factura Liquidacion</label>
-			 	<input type="number" name="facturaLiquidacion" id="facturaLiquidacion" class="form-control" >
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="fechaDeposito">Fecha Deposito</label>
-			 	<input type="number" name="fechaDeposito" id="fechaDeposito" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="comisionTTCYD">Comision TTCYD</label>
-			 	<input type="number" name="comisionTTCYD" id="comisionTTCYD" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="fechaPagoCYDSAaTTCYD">Fecha de Pago de CYDSA a TTCYD</label>
-			 	<input type="number" name="fechaPagoCYDSAaTTCYD" id="fechaPagoCYDSAaTTCYD" class="form-control" >
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="facturaSinIva">Factura Sin Iva</label>
-			 	<input type="number" name="facturaSinIva" id="facturaSinIva" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="facturaConIva">Factura con Iva</label>
-			 	<input type="number" name="facturaConIva" id="facturaConIva" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="totalFlete">Total Flete</label>
-			 	<input type="number" name="totalFlete" id="totalFlete" class="form-control">
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="comisionSinIva">Comision sin IVA</label>
-			 	<input type="number" name="comisionSinIva" id="comisionSinIva" class="form-control" >
-			</div>
-			<div class="form-group col-md-3">
-			 	<label for="comisionConIva">Comision con IVA</label>
-			 	<input type="number" name="comisionConIva" id="comisionConIva" class="form-control">
-			</div>
-	</div>
-	</div>
+		</div>
 	</div>
 
 

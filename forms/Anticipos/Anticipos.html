@@ -12,59 +12,62 @@
 <form name="form" role="form">
 
 <div class="panel panel-info">
-<div class="panel-heading">
-    <h3 class="panel-title"><span class="fluigicon fluigicon-money icon-md"> </span>Anticipos</h3>
+	<div class="panel-heading">
+    	<h3 class="panel-title"><span class="fluigicon fluigicon-money icon-md"> </span>Anticipos</h3>
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="form-group col-md-4">
+			 	<label for="fecha">Fechas de Viaje</label>
+			 	<input placeholder="dd/mm/aaaa" type="text" name="fecha" id="fecha" class="form-control">
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="talon">Talon</label>
+			 	<input type="text" name="talon" id="talon" class="form-control" mask="00-00">
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="orden">Orden</label>
+			 	<input type="number" name="orden" id="orden" class="form-control" mask="000000">
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="destino">Destino</label>
+			 	<select type="text" name="destino" id="destino" class="form-control"dataSet="dsFormDestino" datasetkey="estado" datasetvalue="estado"></select>
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="peso">Peso</label>
+			 	<input type="number" name="peso" id="peso" class="form-control" mask="00.00">
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="cuota">Cuota</label>
+			 	<input type="number" name="cuota" id="cuota" class="form-control">
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="nomProveedor">Nombre Proveedor</label>
+			 	<label type="text" name="nomProveedor" id="nomProveedor" class="form-control">La Sal TTCYD</label>
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="operador">Operador</label>
+			 	<select type="text" name="operador" id="operador" class="form-control" dataSet="dsFormOperador" datasetkey="nombre" datasetvalue="nombre"></select>
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="deposito">Deposito 50%</label>
+			 	<input type="text" name="deposito" id="deposito" class="form-control">
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="facAnticipo">Factura Primer Anticipo</label>
+			 	<input type="text" name="facAnticipo" id="facAnticipo" class="form-control">
+			</div>
+			<div class="form-group col-md-4">
+			 	<label for="estatusAnticipo">Estatus Primer Anticipo</label>
+			 	<input type="text" name="estatusAnticipo" id="estatusAnticipo" class="form-control">
+			</div>
+			<div class="form-group col-md-2">
+				<label for="anticipoPagado" class="fluigicon fluigicon-paste icon-sm">Estatus de Anticipo Pagado</label>
+				<input type="checkbox" name="anticipoPagado" id ="anticipoPagado" class="form-control">
+			</div>
+		</div>
+	</div>
 </div>
-<div class="panel-body">
-<div class="row">
-
-	<div class="form-group col-md-4">
-	 	<label for="fecha">Fechas de Viaje</label>
-	 	<input placeholder="dd/mm/aaaa" type="text" name="fecha" id="fecha" class="form-control">
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="talon">Talon</label>
-	 	<input type="text" name="talon" id="talon" class="form-control" mask="00-00">
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="orden">Numero de Orden</label>
-	 	<input type="number" name="orden" id="orden" class="form-control" mask="000000">
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="destino">Destino</label>
-	 	<select type="text" name="destino" id="destino" class="form-control"dataSet="dsFormDestino" datasetkey="estado" datasetvalue="estado"></select>
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="peso">Peso</label>
-	 	<input type="number" name="peso" id="peso" class="form-control" mask="00.00">
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="cuota">Cuota</label>
-	 	<input type="number" name="cuota" id="cuota" class="form-control">
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="nomProveedor">Nombre Proveedor</label>
-	 	<label type="text" name="nomProveedor" id="nomProveedor" class="form-control">La Sal TTCYD</label>
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="operador">Operador</label>
-	 	<select type="text" name="operador" id="operador" class="form-control" dataSet="dsFormOperador" datasetkey="nombre" datasetvalue="nombre"></select>
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="deposito">Deposito 50%</label>
-	 	<input type="text" name="deposito" id="deposito" class="form-control">
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="estatusAnticipo">Estatus Primer Anticipo</label>
-	 	<input type="text" name="estatusAnticipo" id="estatusAnticipo" class="form-control">
-	</div>
-	<div class="form-group col-md-4">
-	 	<label for="facAnticipo">Factura Primer Anticipo</label>
-	 	<input type="text" name="facAnticipo" id="facAnticipo" class="form-control">
-	</div>
-	</div>
-	</div>
-	</div>
 
 
 </form>
